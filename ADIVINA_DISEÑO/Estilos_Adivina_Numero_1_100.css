@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(204, 204, 185) !important;
+}
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 1.5rem !important;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    background-color: rgb(46, 43, 43);
+    color: beige;
+    margin:5px !important;
+
+}
+
+.fa-times {
+    background-color: aliceblue;
+}
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+    color: black;
+}
+.justify-content-center {
+    text-align: center;
+}
+
+#cuadroMensaje {
+    position: absolute;
+    width: 20%;
+    margin-left: 0.3%;
+    margin-top: 17%;
+    z-index: 2;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: #a8e063;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #56ab2f, #a8e063);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
