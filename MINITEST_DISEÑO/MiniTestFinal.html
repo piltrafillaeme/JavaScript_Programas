@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos_Minitest.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="MiniTestFinal.js"></script>
+    <title>MiniTest JavaScript</title>
+</head>
+<body>
+    <div class="cabecera row justify-content-center">
+            <h1>Minitest sobre JavaScript</h1>
+        </div>
+    <div class="container">
+        
+        <div id="preguntas">
+            <!-- PREGUNTA UNO -->
+            <p id="1">Pregunta 1. JavaScript es...</p>
+            <div class="input-group">
+                <div class="input-group-prepend">
+
+                    <div class="input-group-text">
+                        <input type="radio" name="radio" value="0" aria-label="Radio button for following text input">
+                    </div>
+                </div>
+                <span class="form-control" aria-label="Text input with radio button">Un lenguaje tipado.</span>
+            </div>
+            <!-- <br> -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" name="radio" value="1" aria-label="Radio button for following text input">
+                    </div>
+                </div>
+                    <span class="form-control" aria-label="Text input with radio button">Un lenguaje no tipado.</span>
+            </div>
+            <!-- <br> -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" name="radio" value="0" aria-label="Radio button for following text input">
+                    </div>
+                </div>
+                    <span class="form-control" aria-label="Text input with radio button">Una isla de Japón.</span>
+            </div>
+            <!-- PREGUNTA DOS -->
+            <p id="2">Pregunta 2. ¿Cuáles de los siguientes métodos son aplicables a las cadenas?</p>
+            <div class="input-group">
+                <div class="input-group-prepend">
+
+                    <div class="input-group-text">
+                        <input type="checkbox" name="checkbox" value="1" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                <span class="form-control" aria-label="Text input with radio button">length.</span>
+            </div>
+            <!-- <br> -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" name="checkbox" value="1" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                    <span class="form-control" aria-label="Text input with radio button">substr.</span>
+            </div>
+            <!-- <br> -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" name="checkbox" value="0" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                    <span class="form-control" aria-label="Text input with radio button">sprite.</span>
+            </div>
+            <!-- <br> -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" name="checkbox" value="1" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                    <span class="form-control" aria-label="Text input with radio button">split.</span>
+            </div>
+            <!-- PREGUNTA TRES -->
+            <p id="3">Pregunta 3. En JavaScript,¿cómo se llama el objeto que representa una expresión regular?</p>
+            <select id="select" class="browser-default custom-select">
+                <option value="-1" class=" row justify-content-center" selected>-- Elegir --</option>
+                <option value="0">No hay ningún objeto</option>
+                <option value="0">ExpReg</option>
+                <option value="1">RegExp</option>
+                <option value="0">Rexp</option>
+            </select>
+
+            <!-- PREGUNTA CUATRO -->
+            <!-- Material input -->
+            <p id="4">Pregunta 4. ¿Un fichero externo con código JavaScript debe contener la etiqueta script?</p>
+            <!-- Default input -->
+            <input type="text" class="form-control" name="campoTexto" id="campoTexto">
+
+            <button type="button" id="corrige" class="btn btn-info" onclick="Corregir();">Corregir</button>
+            <!-- <p id="intentos"></p>
+            <p id="porcentaje"></p> -->
+        </div>
+        <!-- FORMATO SALIDA -->
+            <div id="salida" class="card" style="width: 18rem; display: none">
+            <img class="card-img-top" src="Javascript.jpg" alt="jsimagen">
+            <div class="card-body">
+              <h5 class="card-title row justify-content-center">RESULTADO TEST</h5>
+              <p class="card-text" id="numeroIntentos">Número de intentos: </p>
+              <p class="card-text" id="notaFinal">Nota: </p>
+            </div>
+            <div class="card-body row justify-content-center">
+                <button type="button" id="reintentar" class="btn btn-info" onclick="quitaTarjeta();">Aceptar</button>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>

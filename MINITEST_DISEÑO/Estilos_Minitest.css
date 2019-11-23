@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans|Josefin+Sans&display=swap'); 
+
+/* ESTILO FONDO PANTALLA Y FUENTE TIPOGRÁFICA */
+body {
+font-family: 'Josefin Sans', sans-serif; 
+font-family: 'DM Sans', sans-serif;
+background:  #FFE5BB;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-repeat: no-repeat; 
+background-size: contain;
+width: 80%;
+height: fit-content;
+}
+
+/* CABECERA CON TITULO */
+.cabecera {
+    margin-top: 3%;
+    width: 120%;
+}
+
+.cabecera h1 {
+    font-weight: bolder;
+    margin-left: 10%;
+}
+
+/* TAMAÑO LETRA PREGUNTAS */
+p {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 2.7%;
+}
+
+
+/* POSICIÓN DEL CONTENIDO */
+.container {
+    box-sizing: border-box;
+    margin-left: 3% !important;
+}
+
+/* #preguntas {
+    margin-left: 3%;
+} */
+
+/* TAMAÑO DE LOS INPUTS */
+/* tamaño span pregunta 1 y 2 */
+.input-group {
+    width: fit-content;
+    margin-bottom: 1%;
+}
+
+/* tamaño select pregunta 3 */
+.custom-select {
+    width: auto;
+    /* margin-bottom: 1%; */
+}
+
+.form-control {
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+
+/* ESTILOS DE LOS BOTONES */
+.btn {
+    margin-bottom: 1%;
+}
+
+#corrige {
+    color: #fff;
+    background-color: #FF886A;
+    border-color: #FF886A;
+}
+
+#reintentar {
+    color: #fff;
+    background-color: #4AAEAA;
+    border-color: #4AAEAA;
+    font-style: bold;
+}
+
+/* ESTILOS VENTANA MODAL RESULTADOS */
+#salida {
+    position: absolute !important;
+    top: 15% !important;
+    right: 10% !important;
+}
+
+.card {
+    border: 10px solid #9EC8B2;
+    /* border-right-color: #A0C8B2;
+    border-top-color: #A0C8B2;
+    border-left-color: #FFB18D;
+    border-bottom-color: #FFB18D; */
+}
+
