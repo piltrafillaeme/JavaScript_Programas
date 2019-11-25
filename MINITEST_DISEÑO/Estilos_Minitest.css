@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans|Josefin+Sans&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap');
 
 /* ESTILO FONDO PANTALLA Y FUENTE TIPOGRÁFICA */
 body {
-font-family: 'Josefin Sans', sans-serif; 
-font-family: 'DM Sans', sans-serif;
-background:  #FFE5BB;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* font-family: 'Josefin Sans', sans-serif; 
+font-family: 'DM Sans', sans-serif; */
+font-family: 'Abril Fatface', cursive;
+font-family: 'Montserrat', sans-serif;
+letter-spacing: 0.1em;
 
-background-repeat: no-repeat; 
-background-size: contain;
+background: #108dc7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #108dc7, #ef8e38 );  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #108dc7, #ef8e38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-repeat: repeat-y; 
+/* background-size: contain; */
 width: 80%;
 height: fit-content;
 }
@@ -51,6 +52,7 @@ p {
 .input-group {
     width: fit-content;
     margin-bottom: 1%;
+    height: fit-content;
 }
 
 /* tamaño select pregunta 3 */
@@ -68,12 +70,13 @@ p {
 /* ESTILOS DE LOS BOTONES */
 .btn {
     margin-bottom: 1%;
+    margin-top: 2%;
 }
 
 #corrige {
     color: #fff;
-    background-color: #FF886A;
-    border-color: #FF886A;
+    background-color: #ef8e38;
+    border-color: #ef8e38;
 }
 
 #reintentar {
@@ -86,12 +89,14 @@ p {
 /* ESTILOS VENTANA MODAL RESULTADOS */
 #salida {
     position: absolute !important;
-    top: 15% !important;
+    top: 20% !important;
     right: 10% !important;
 }
 
 .card {
-    border: 10px solid #9EC8B2;
+    border: 10px solid #9EC8B2; 
+    /* border: 10px solid #448DA5; */
+    
     /* border-right-color: #A0C8B2;
     border-top-color: #A0C8B2;
     border-left-color: #FFB18D;

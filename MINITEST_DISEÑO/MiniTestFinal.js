@@ -122,20 +122,6 @@ console.log(puntos);
       document.getElementById("notaFinal").innerHTML = `Nota: ${puntos}`;
   }
 
-alert(puntos);
-  //MOSTRAMOS EL PORCENTAJE DE ACIERTOS
-  // var porcentajeAciertos = (aciertos/6)*100;
-  // porcentajeAciertos = porcentajeAciertos.toFixed(2);
-  // document.getElementById("porcentaje").innerHTML = `Porcentaje de acierto: ${porcentajeAciertos} %.`;
-  // if(porcentajeAciertos < 50) {
-  //     document.getElementById("porcentaje").style.color = "red";
-  // } else {
-  //     if(porcentajeAciertos < 75) {
-  //         document.getElementById("porcentaje").style.color = "orange";
-  //     } else {
-  //         document.getElementById("porcentaje").style.color = "green";
-  //     }   
-  // }
 };
 
 var quitaTarjeta = function(){
