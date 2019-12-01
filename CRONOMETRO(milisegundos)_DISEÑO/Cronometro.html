@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="Estilos_Cronometro.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="Cronometro.js"></script>
+</head>
+<body>
+    <div class="container" class="row justify-content-center">
+        <div id="titulo" class="row justify-content-center">
+            <h1 class="row justify-content-center"><i class="fas fa-stopwatch"></i></h1>
+        </div>
+        <div id="reloj">
+                    <div id="digitosCronometro"></div>
+        </div>
+        <div id="botonera" class="row justify-content-center">
+            <button id="play" class="boton" onclick="Cronometrar()"><i class="fas fa-play"></i></button>
+            <button id="stop" class="boton" onclick="Parar()"><i class="fas fa-pause"></i></button>
+            <button id="reset" class="boton" onclick="Reiniciar()"><i class="fas fa-stop"></i></button>
+            <button id="vueltas" class="boton" onclick="Vuelta()"><i class="fas fa-plus"></i></button>
+        </div>
+        <div id="listaVueltas" class="row justify-content-center">
+            
+        </div>
+    </div>
+</body>
+</html>
